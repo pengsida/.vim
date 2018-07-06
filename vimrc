@@ -1,0 +1,55 @@
+set runtimepath+=~/.vim/vim_runtime
+
+source ~/.vim/vim_runtime/vimrcs/basic.vim
+source ~/.vim/vim_runtime/vimrcs/filetypes.vim
+source ~/.vim/vim_runtime/vimrcs/plugins_config.vim
+source ~/.vim/vim_runtime/vimrcs/extended.vim
+
+try
+source ~/.vim_runtime/my_configs.vim
+catch
+endtry
+
+let g:dracula_italic = 0
+colorscheme dracula
+highlight Normal ctermbg=None
+
+let g:NERDTreeWinPos = "left"
+
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+
+call vundle#end()
+filetype plugin indent on
+
+let g:ycm_server_python_interpreter='/usr/bin/python'
+let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
+
+nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+set clipboard=unnamed
+
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : exists("g:loaded_snips") ? "\<C-r>=snipMate#TriggerSnippet()\<CR>" : "\<Tab>"
+
+set clipboard=unnamed
+
+nmap H 0
+nnoremap L $
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+nnoremap <CR> o<Esc>gk
+nnoremap <C-s> :w<CR>
+vnoremap <C-s> <Esc>:w<CR>gv
+inoremap <C-s> <Esc>:w<CR>a
+let g:vim_markdown_folding_disabled = 1
+set nohlsearch
+
+
+
