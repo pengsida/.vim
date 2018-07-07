@@ -32,13 +32,15 @@ let g:ycm_server_python_interpreter='/usr/bin/python'
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:BASH_Ctrl_j = 'off'
+nnoremap <C-j> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 set clipboard=unnamed
 
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : exists("g:loaded_snips") ? "\<C-r>=snipMate#TriggerSnippet()\<CR>" : "\<Tab>"
 
 set clipboard=unnamed
 
-nmap H 0
+nnoremap H ^
 nnoremap L $
 nnoremap j gj
 nnoremap k gk
@@ -50,4 +52,5 @@ vnoremap <C-s> <Esc>:w<CR>gv
 inoremap <C-s> <Esc>:w<CR>a
 let g:vim_markdown_folding_disabled = 1
 set nohlsearch
+nnoremap <leader>g :Ack!<Space>
 

@@ -15,3 +15,9 @@ cd YouCompleteMe
 ./install.py --clang-completer
 ```
 
+To use ack, you might need to install ack-grep for ubuntu:
+
+```bash
+sudo apt-get install ack-grep
+```
+
