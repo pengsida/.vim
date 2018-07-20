@@ -42,6 +42,8 @@ set clipboard=unnamed
 
 nnoremap H ^
 nnoremap L $
+vnoremap H ^
+vnoremap L $
 nnoremap j gj
 nnoremap k gk
 vnoremap j gj
@@ -55,5 +57,5 @@ set nohlsearch
 nnoremap <leader>g :Ack!<Space>
 nnoremap J gT
 nnoremap K gt
-
+nnoremap b F
 
