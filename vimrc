@@ -28,7 +28,7 @@ Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 
-let g:ycm_server_python_interpreter='/usr/bin/python'
+let g:ycm_server_python_interpreter='/usr/bin/python3'
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
@@ -58,4 +58,6 @@ nnoremap <leader>g :Ack!<Space>
 nnoremap J gT
 nnoremap K gt
 nnoremap b F
+nnoremap <leader>d "_d
+nnoremap <leader>c "_c
 
