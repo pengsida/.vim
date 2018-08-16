@@ -24,6 +24,8 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'iamcco/mathjax-support-for-mkdp'
+Plugin 'iamcco/markdown-preview.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -59,5 +61,11 @@ nnoremap J gT
 nnoremap K gt
 nnoremap b F
 nnoremap <leader>d "_d
+nnoremap <leader>D "_D
 nnoremap <leader>c "_c
+nnoremap <leader>C "_C
+nmap <silent> <F8> <Plug>MarkdownPreview
+imap <silent> <F8> <Plug>MarkdownPreview
+nmap <silent> <F9> <Plug>StopMarkdownPreview
+imap <silent> <F9> <Plug>StopMarkdownPreview
 
