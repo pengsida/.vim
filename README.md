@@ -15,6 +15,18 @@ cd YouCompleteMe
 ./install.py --clang-completer
 ```
 
+Once you install YouCompleteMe, you will find that <Tab> does not trigger SnipMate any more, because a key mapping in YouCompleteMe blocks its function. To repair SnipMate, we can simply comment two lines of codes in "./bundle/YouCompleteMe/autoload/youcompleteme.vim":
+
+```bash
+for key in g:ycm_key_list_select_completion
+    " With this command, when the completion window is visible, the tab key
+    " (default) will select the next candidate in the window. In vim, this also
+    " changes the typed-in text to that of the candidate completion.
+    " exe 'inoremap <expr>' . key .
+    "       \ ' pumvisible() ? "\<C-n>" : "\' . key .'"'
+endfor
+```
+
 To use ack, you might need to install ack-grep for ubuntu:
 
 ```bash

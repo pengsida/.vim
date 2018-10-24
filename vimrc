@@ -33,6 +33,7 @@ filetype plugin indent on
 let g:ycm_server_python_interpreter='/usr/bin/python3'
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 let g:ycm_filetype_blacklist = {}
+set completeopt-=preview
 
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let g:BASH_Ctrl_j = 'off'
