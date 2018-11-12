@@ -26,6 +26,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'iamcco/mathjax-support-for-mkdp'
 Plugin 'iamcco/markdown-preview.vim'
+Plugin 'vim-latex/vim-latex'
 
 call vundle#end()
 filetype plugin indent on
@@ -41,6 +42,8 @@ nnoremap <C-j> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 set clipboard=unnamed
 
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : exists("g:loaded_snips") ? "\<C-r>=snipMate#TriggerSnippet()\<CR>" : "\<Tab>"
+
+let g:tex_flavor='latex'
 
 set clipboard=unnamed
 
@@ -70,4 +73,5 @@ nmap <silent> <F8> <Plug>MarkdownPreview
 imap <silent> <F8> <Plug>MarkdownPreview
 nmap <silent> <F9> <Plug>StopMarkdownPreview
 imap <silent> <F9> <Plug>StopMarkdownPreview
+set nofoldenable
 
