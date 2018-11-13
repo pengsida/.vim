@@ -43,7 +43,7 @@ set clipboard=unnamed
 
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : exists("g:loaded_snips") ? "\<C-r>=snipMate#TriggerSnippet()\<CR>" : "\<Tab>"
 
-let g:tex_flavor='latex'
+" let g:tex_flavor='latex'
 
 set clipboard=unnamed
 
@@ -74,4 +74,6 @@ imap <silent> <F8> <Plug>MarkdownPreview
 nmap <silent> <F9> <Plug>StopMarkdownPreview
 imap <silent> <F9> <Plug>StopMarkdownPreview
 set nofoldenable
+
+autocmd FileType latex,tex,md,markdown setlocal spell
 
