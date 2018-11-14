@@ -76,4 +76,5 @@ imap <silent> <F9> <Plug>StopMarkdownPreview
 set nofoldenable
 
 autocmd FileType latex,tex,md,markdown setlocal spell
+set formatoptions-=tc
 
