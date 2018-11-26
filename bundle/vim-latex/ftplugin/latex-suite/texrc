@@ -113,7 +113,7 @@ TexLet g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi'
 " NOTE: pdflatex generates the same output as latex. therefore quickfix is
 "       possible.
 " Synctex is now supported by pdflatex.
-TexLet g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
+TexLet g:Tex_CompileRule_pdf = 'xelatex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
 
 " TexLet g:Tex_CompileRule_pdf = 'ps2pdf $*.ps'
 " TexLet g:Tex_CompileRule_pdf = 'dvipdfm $*.dvi'

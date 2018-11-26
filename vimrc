@@ -41,9 +41,8 @@ let g:BASH_Ctrl_j = 'off'
 nnoremap <C-j> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 set clipboard=unnamed
 
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : exists("g:loaded_snips") ? "\<C-r>=snipMate#TriggerSnippet()\<CR>" : "\<Tab>"
-
-" let g:tex_flavor='latex'
+inoremap <expr> <Tab> exists("g:loaded_snips") ? "\<C-r>=snipMate#TriggerSnippet()\<CR>" : "\<Tab>"
+" inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : exists("g:loaded_snips") ? "\<C-r>=snipMate#TriggerSnippet()\<CR>" : "\<Tab>"
 
 set clipboard=unnamed
 
@@ -77,4 +76,5 @@ set nofoldenable
 
 autocmd FileType latex,tex,md,markdown setlocal spell
 set formatoptions-=tc
+let g:Imap_UsePlaceHolders=0
 
