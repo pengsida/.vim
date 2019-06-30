@@ -33,3 +33,9 @@ To use ack, you might need to install ack-grep for ubuntu:
 sudo apt-get install ack-grep
 ```
 
+Choose the latex compiler in `~/.vim/bundle/vim-latex/ftplugin/latex-suite`:
+
+```
+TexLet g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
+```
+
