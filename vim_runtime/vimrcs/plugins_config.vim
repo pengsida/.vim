@@ -120,6 +120,9 @@ let g:lightline = {
       \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}',
       \   'lineinfo': '%{line(".") . "/" . line("$")}',
       \ },
+      \ 'component_function': {
+      \   'filename': 'LightlineFilename',
+      \ },
       \ 'component_visible_condition': {
       \   'readonly': '(&filetype!="help"&& &readonly)',
       \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
@@ -128,6 +131,15 @@ let g:lightline = {
       \ 'separator': { 'left': ' ', 'right': ' ' },
       \ 'subseparator': { 'left': ' ', 'right': ' ' }
       \ }
+
+function! LightlineFilename()
+  let root = fnamemodify(get(b:, 'git_dir'), ':h')
+  let path = expand('%:p')
+  if path[:len(root)-1] ==# root
+    return path[len(root)+1:]
+  endif
+  return expand('%')
+endfunction
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vimroom

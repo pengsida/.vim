@@ -1,5 +1,16 @@
 # Global snippets
 
+snippet split
+	\begin{split}
+	    ${0}
+	\end{split}
+
+snippet $
+	$${1}$${0}
+
+snippet diag
+	$\begin{pmatrix} \lambda_1  & & \\ & \ddots & \\ & & \lambda_N \end{pmatrix}$
+
 snippet tri
 	$triangledown^2$
 
@@ -7,6 +18,11 @@ snippet equation
 	\begin{equation}
 	    ${0}
 	\end{equation}
+
+snippet pmatrix
+	\begin{pmatrix}
+	    ${0}
+	\end{pmatrix}
 
 # (c) holds no legal value ;)
 snippet c)
