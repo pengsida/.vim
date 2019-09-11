@@ -77,4 +77,5 @@ set nofoldenable
 autocmd FileType latex,tex,md,markdown setlocal spell
 set formatoptions-=tc
 let g:Imap_UsePlaceHolders=0
+let g:go_version_warning=0
 
