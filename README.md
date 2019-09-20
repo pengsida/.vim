@@ -15,7 +15,9 @@ cd YouCompleteMe
 ./install.py --clang-completer
 ```
 
-Once you install YouCompleteMe, you will find that <Tab> does not trigger SnipMate any more, because a key mapping in YouCompleteMe blocks its function. To repair SnipMate, we can simply comment two lines of codes in "./bundle/YouCompleteMe/autoload/youcompleteme.vim":
+You need revise ycm server python interpreter manually in ".vimrc", which should be the one you used to compile ycm.
+
+Once you install YouCompleteMe, you will find that `<Tab>` does not trigger SnipMate any more, because a key mapping in YouCompleteMe blocks its function. To repair SnipMate, we can simply comment two lines of codes in "./bundle/YouCompleteMe/autoload/youcompleteme.vim":
 
 ```bash
 for key in g:ycm_key_list_select_completion
