@@ -27,14 +27,16 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'iamcco/mathjax-support-for-mkdp'
 Plugin 'iamcco/markdown-preview.vim'
 Plugin 'vim-latex/vim-latex'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()
 filetype plugin indent on
 
 let g:ycm_server_python_interpreter='/usr/bin/python3'
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
-let g:ycm_filetype_blacklist = {}
+let g:ycm_filetype_blacklist={}
 set completeopt-=preview
+let g:ycm_goto_buffer_command='new-tab'
 
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let g:BASH_Ctrl_j = 'off'
@@ -78,4 +80,11 @@ autocmd FileType latex,tex,md,markdown setlocal spell
 set formatoptions-=tc
 let g:Imap_UsePlaceHolders=0
 let g:go_version_warning=0
+
+let g:gitgutter_enabled=1
+set updatetime=100
+map <leader>gge :GitGutterEnable
+map <leader>ggd :GitGutterDisable
+
+nmap <leader>j :CtrlP<Space>
 
