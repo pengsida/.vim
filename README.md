@@ -57,7 +57,7 @@ TexLet g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode -fi
 3. YouCompleteMe
     * Jump to the definition or declaration: `<leader>jd`
 4. GitFugitive
-    * Git diff between current change and previous commit: `:Gdiff`
+    * Git diff between current change and previous commit: `:Gvdiff`
 
 
 ## Frequently used shortcuts
