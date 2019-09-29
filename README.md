@@ -59,7 +59,8 @@ TexLet g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode -fi
 4. GitFugitive
     * Git diff between current change and previous commit: `:Gvdiff`
     * Show all changes: `:Greview`
-
+5. vim-snippets
+    * Global snippets: `vim_runtime/sources_non_forked/vim-snippets/snippets/_.snippts`
 
 ## Frequently used shortcuts
 
