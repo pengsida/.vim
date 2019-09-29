@@ -85,6 +85,7 @@ let g:gitgutter_enabled=1
 set updatetime=100
 map <leader>gge :GitGutterEnable
 map <leader>ggd :GitGutterDisable
+command Greview :Git! diff
 
 nmap <leader>j :CtrlP<Space>
 
