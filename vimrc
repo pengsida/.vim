@@ -60,6 +60,9 @@ nnoremap <CR> o<Esc>gk
 nnoremap <C-s> :w<CR>
 vnoremap <C-s> <Esc>:w<CR>gv
 inoremap <C-s> <Esc>:w<CR>a
+nnoremap <C-q> :q<CR>
+vnoremap <C-q> <Esc>:q<CR>
+inoremap <C-q> <Esc>:q<CR>
 let g:vim_markdown_folding_disabled = 1
 set nohlsearch
 nnoremap <leader>g :Ack!<Space>
@@ -85,7 +88,9 @@ let g:gitgutter_enabled=1
 set updatetime=100
 map <leader>gge :GitGutterEnable
 map <leader>ggd :GitGutterDisable
-command Greview :Git! diff
+command Greview :Git! diff --diff-filter=d
 
 nmap <leader>j :CtrlP<Space>
+let g:ctrlp_bufname_mod = ':~:.'
+let g:ctrlp_bufpath_mod = ''
 
