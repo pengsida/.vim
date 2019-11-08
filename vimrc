@@ -56,7 +56,6 @@ nnoremap j gj
 nnoremap k gk
 vnoremap j gj
 vnoremap k gk
-nnoremap <CR> o<Esc>gk
 nnoremap <C-s> :w<CR>
 vnoremap <C-s> <Esc>:w<CR>gv
 inoremap <C-s> <Esc>:w<CR>a
@@ -93,4 +92,6 @@ command Greview :Git! diff --diff-filter=d
 nmap <leader>j :CtrlP<Space>
 let g:ctrlp_bufname_mod = ':~:.'
 let g:ctrlp_bufpath_mod = ''
+
+nnoremap <C-n> :tabnew<CR>
 
