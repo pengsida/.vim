@@ -94,4 +94,5 @@ let g:ctrlp_bufname_mod = ':~:.'
 let g:ctrlp_bufpath_mod = ''
 
 nnoremap <C-n> :tabnew<CR>
+vnoremap <C-y> "+y
 

@@ -68,4 +68,9 @@ TexLet g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode -fi
 2. Switch between tabs: `J` and `K`, which means left switch and right switch, respectively.
 3. Find a specific text: `<space>`.
 4. Move to the beginning and the end of the line: `H` and `L`.
+5. Copy the text to the system clipboard: `<ctrl-y>`.
+
+## Seldom used shortcuts
+
+1. [`<leader>d`](https://stackoverflow.com/questions/11993851/how-to-delete-not-cut-in-vim)
 
