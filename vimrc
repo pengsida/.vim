@@ -28,6 +28,7 @@ Plugin 'iamcco/mathjax-support-for-mkdp'
 Plugin 'iamcco/markdown-preview.vim'
 Plugin 'vim-latex/vim-latex'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'Chiel92/vim-autoformat'
 
 call vundle#end()
 filetype plugin indent on
@@ -95,4 +96,6 @@ let g:ctrlp_bufpath_mod = ''
 
 nnoremap <C-n> :tabnew<CR>
 vnoremap <C-y> "+y
+
+let g:formatters_python = ['autopep8']
 

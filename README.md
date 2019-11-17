@@ -39,6 +39,12 @@ To use ack, you might need to install ack-grep for ubuntu:
 sudo apt-get install ack-grep
 ```
 
+To use vim-autoformat, you need to install autopep8 and make sure that it works on ubuntu:
+
+```
+sudo apt-get install python-autopep8
+```
+
 Choose the latex compiler in `~/.vim/bundle/vim-latex/ftplugin/latex-suite`:
 
 ```
@@ -61,6 +67,8 @@ TexLet g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode -fi
     * Show all changes: `:Greview`
 5. vim-snippets
     * Global snippets: `vim_runtime/sources_non_forked/vim-snippets/snippets/_.snippts`
+6. vim-autoformat
+    * Format the code: `:Autoformat`
 
 ## Frequently used shortcuts
 
