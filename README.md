@@ -72,11 +72,12 @@ TexLet g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode -fi
 
 ## Frequently used shortcuts
 
-1. Open a new tab: `<leader>tn` or `<ctrl-n>`.
-2. Switch between tabs: `J` and `K`, which means left switch and right switch, respectively.
-3. Find a specific text: `<space>`.
-4. Move to the beginning and the end of the line: `H` and `L`.
-5. Copy the text to the system clipboard: `<ctrl-y>`.
+1. `<leader>` is `,`.
+2. Open a new tab: `<leader>tn` or `<ctrl-n>`.
+3. Switch between tabs: `J` and `K`, which means left switch and right switch, respectively.
+4. Find a specific text: `<space>`.
+5. Move to the beginning and the end of the line: `H` and `L`.
+6. Copy the text to the system clipboard: `<ctrl-y>`.
 
 ## Seldom used shortcuts
 
