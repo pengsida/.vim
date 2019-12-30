@@ -99,3 +99,5 @@ vnoremap <C-y> "+y
 
 let g:formatters_python = ['autopep8']
 
+nmap <C-g> vgc:w<CR>
+vmap <C-g> gc:w<CR>
