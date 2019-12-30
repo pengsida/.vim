@@ -78,6 +78,7 @@ TexLet g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode -fi
 4. Find a specific text: `<space>`.
 5. Move to the beginning and the end of the line: `H` and `L`.
 6. Copy the text to the system clipboard: `<ctrl-y>`.
+7. Annotate a line: `<ctrl-g>`.
 
 ## Seldom used shortcuts
 
