@@ -33,7 +33,7 @@ Plugin 'Chiel92/vim-autoformat'
 call vundle#end()
 filetype plugin indent on
 
-let g:ycm_server_python_interpreter='/usr/bin/python3'
+let g:ycm_server_python_interpreter='/home/pengsida/Software/anaconda3/bin/python'
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 let g:ycm_filetype_blacklist={}
 set completeopt-=preview
@@ -97,7 +97,8 @@ let g:ctrlp_bufpath_mod = ''
 nnoremap <C-n> :tabnew<CR>
 vnoremap <C-y> "+y
 
-let g:formatters_python = ['autopep8']
+let g:formatters_python = ['yapf']
+let g:formatter_yapf_style = 'pep8'
 
 nmap <C-g> vgc:w<CR>
 vmap <C-g> gc:w<CR>
