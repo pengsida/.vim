@@ -8,7 +8,8 @@ It has the following features:
 
 ## Installation
 
-Remove your vim first and `git clone https://github.com/pengsida/.vim.git`.
+1. Remove your vim first and `git clone https://github.com/pengsida/.vim.git`.
+2. Install `vim-gnome` to support clipboard.
 
 You could arm this vim with YouCompleteMe through the commands:
 
