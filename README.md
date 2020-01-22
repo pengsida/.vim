@@ -10,6 +10,7 @@ It has the following features:
 
 1. Remove your vim first and `git clone https://github.com/pengsida/.vim.git`.
 2. Install `vim-gnome` to support clipboard.
+3. `pip install yapf` to support vim-autoformat.
 
 You could arm this vim with YouCompleteMe through the commands:
 
@@ -70,6 +71,7 @@ TexLet g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode -fi
     * Global snippets: `vim_runtime/sources_non_forked/vim-snippets/snippets/_.snippts`
 6. vim-autoformat
     * Format the code: `:Autoformat`
+    * If the formatter doesn't work as expected: `let g:autoformat_verbosemode=1`.
 
 ## Frequently used shortcuts
 
@@ -84,4 +86,3 @@ TexLet g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode -fi
 ## Seldom used shortcuts
 
 1. [`<leader>d`](https://stackoverflow.com/questions/11993851/how-to-delete-not-cut-in-vim)
-
