@@ -93,6 +93,7 @@ command Greview :Git! diff --diff-filter=d
 nmap <leader>j :CtrlP<Space>
 let g:ctrlp_bufname_mod = ':~:.'
 let g:ctrlp_bufpath_mod = ''
+unlet g:ctrlp_custom_ignore
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](node_modules|record|cache)|\v[\/]\.(git|hg|svn)$',
   \ 'file': '\v\.(exe|so|dll|npy|pkl|png|jpg|pth)$',
