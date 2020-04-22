@@ -71,7 +71,10 @@ TexLet g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode -fi
     * Global snippets: `vim_runtime/sources_non_forked/vim-snippets/snippets/_.snippts`
 6. vim-autoformat
     * Format the code: `:Autoformat`
-    * If the formatter doesn't work as expected: `let g:autoformat_verbosemode=1`.
+    * If the formatter doesn't work as expected: `let g:autoformat_verbosemode=1`
+7. markdown-preview.vim
+    * Open markdown preview window: `F8`
+    * Close markdown preview window: `F9`
 
 ## Frequently used shortcuts
 
