@@ -85,6 +85,8 @@ TexLet g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode -fi
 5. Move to the beginning and the end of the line: `H` and `L`.
 6. Copy the text to the system clipboard: `<ctrl-y>`.
 7. Annotate a line: `<ctrl-g>`.
+8. Reload a file: `:e`.
+8. Discard local changes and reload the file: `:e!`.
 
 ## Seldom used shortcuts
 
