@@ -28,7 +28,7 @@ Plugin 'iamcco/mathjax-support-for-mkdp'
 Plugin 'iamcco/markdown-preview.vim'
 Plugin 'vim-latex/vim-latex'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'Chiel92/vim-autoformat'
+Plugin 'mindriot101/vim-yapf'
 
 call vundle#end()
 filetype plugin indent on
@@ -103,8 +103,7 @@ let g:ctrlp_custom_ignore = {
 nnoremap <C-n> :tabnew<CR>
 vnoremap <C-y> "+y
 
-let g:formatters_python = ['yapf']
-let g:formatter_yapf_style = 'pep8'
-
 nmap <C-g> vgc:w<CR>
 vmap <C-g> gc:w<CR>
+
+let g:yapf_style = 'pep8'

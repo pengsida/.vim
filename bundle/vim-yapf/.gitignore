@@ -1,0 +1,8 @@
+*.swp
+*.swo
+*.swn
+*.pyc
+docs/_build/*
+.vim-flavor
+.direnv
+venv

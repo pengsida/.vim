@@ -1,0 +1,72 @@
+*yapf.txt*   
+
+Author: Simon Walker  (s.r.walker101 AT googlemail DOT com)
+For Vim version 7 and above
+Last change: 2015 April 10
+
+1. Overview         |yapf-overview|
+2. Required         |yapf-required|
+3. Installation     |yapf-installation|
+4. Usage            |yapf-usage|
+5. Customization    |yapf-customization|
+6. License          |yapf-license|
+
+==============================================================================
+1. Overview                                                *yapf-overview*
+
+vim-yapf is a Vim plugin that applies yapf to your current file.
+yapf automatically formats Python code.
+
+==============================================================================
+2. Required                                                *yapf-required*
+
+yapf
+>
+    https://pypi.python.org/pypi/yapf/
+<
+
+==============================================================================
+3. Installation                                        *yapf-installation*
+
+Simply put the contents of this repository in your ~/.vim/bundle directory.
+
+==============================================================================
+4. Usage                                                      *yapf-usage*
+
+call function
+
+>
+ :Yapf
+<
+
+with arguments
+
+>
+ :Yapf --style google
+<
+
+or
+
+>
+ :call Yapf(" --style google")
+<
+
+==============================================================================
+5. Customization                                      *yapf-customization*
+
+The yapf style can be globally set, in your vimrc:
+
+>
+ let g:yapf_style = "google"
+<
+
+or
+
+>
+ let g:yapf_style = "pep8"
+<
+
+==============================================================================
+6. license                                                  *yapf-license*
+
+MIT license
