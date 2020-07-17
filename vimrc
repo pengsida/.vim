@@ -96,7 +96,7 @@ let g:ctrlp_bufpath_mod = ''
 unlet g:ctrlp_custom_ignore
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](node_modules|record|cache)|\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll|npy|pkl|png|jpg|pth)$',
+  \ 'file': '\v\.(exe|so|dll|npy|pkl|png|jpg|pth|ply|mp4)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
