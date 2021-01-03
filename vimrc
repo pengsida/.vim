@@ -94,11 +94,12 @@ nmap <leader>j :CtrlP<Space>
 let g:ctrlp_bufname_mod = ':~:.'
 let g:ctrlp_bufpath_mod = ''
 unlet g:ctrlp_custom_ignore
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](node_modules|record|cache)|\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll|npy|pkl|png|jpg|pth|ply|mp4)$',
-  \ 'link': 'some_bad_symbolic_links',
-  \ }
+" let g:ctrlp_custom_ignore = {
+"   \ 'dir':  '\v[\/](node_modules|record|cache)|\v[\/]\.(git|hg|svn)$',
+"   \ 'file': '\v\.(exe|so|dll|npy|pkl|png|jpg|pth|ply|mp4)$',
+"   \ 'link': 'some_bad_symbolic_links',
+"   \ }
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 
 nnoremap <C-n> :tabnew<CR>
 vnoremap <C-y> "+y
