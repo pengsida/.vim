@@ -16,7 +16,8 @@ You could arm this vim with YouCompleteMe through the commands:
 
 ```bash
 cd ~/.vim/bundle
-git clone --recursive https://github.com/Valloric/YouCompleteMe.git
+wget https://github.com/pengsida/.vim/releases/download/YouCompleteMe/YouCompleteMe.tar.gz
+tar xvf YouCompleteMe.tar.gz
 cd YouCompleteMe
 ./install.py --clang-completer
 ```
