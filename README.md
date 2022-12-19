@@ -11,8 +11,9 @@ It has the following features:
 1. Remove your vim first and `git clone https://github.com/pengsida/.vim.git`.
 2. Install `vim-gnome` to support clipboard.
 3. `pip install yapf` to support vim-autoformat.
+4. Install YouCompleteMe or AutoComplPop for code completion.
 
-You could arm this vim with YouCompleteMe through the commands:
+Install YouCompleteMe through the commands:
 
 ```bash
 cd ~/.vim/bundle
